@@ -133,20 +133,24 @@ while(score <= passingScore){
 //CODE HERE
 let changeMyMind = true
 
-if (changeMyMind !== true) {
-  console.log(true)
-} else if (changeMyMind !== false) {
-  console.log(false)
+if (changeMyMind === true) {
+  changeMyMind = false
+  console.log(changeMyMind)
+} else if (changeMyMind === false) {
+  changeMyMind = true
+  console.log(changeMyMind)
 }
 
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
-if (changeMyMind === true) {
-  console.log(true)
+if (changeMyMind !== true) {
+  changeMyMind = true
+  console.log(changeMyMind)
 } else if (changeMyMind !== false) {
-  console.log(false)
+  changeMyMind = false
+  console.log(changeMyMind)
 }
 
 ////////// ADVANCED PROBLEMS //////////
@@ -158,6 +162,8 @@ let z = 5;
 
 //CODE HERE
 while(z > 0) {
-  console.log(z)
+  for(let x = z; x > 0; x--) {
+    console.log(x)
+  }
   z-= 1
 }
